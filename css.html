@@ -65,59 +65,74 @@
         <div class="row">
           <div class="col-sm">
             <section id="css-overview">
-              <h3>Cascading Style Sheets</h3>
+              <h3 class="text-success">Cascading Style Sheets</h3>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <b>CSS</b> stands for <b>C</b>ascading <b>S</b>tyle
-                  <b>S</b>heets
+                <li class="list-group-item bg-secondary">
+                  Stands for <b>C</b>ascading <b>S</b>tyle
+                  <b>S</b>heets and defind how to display HTML elements
                 </li>
-                <li class="list-group-item">
-                  Styles define <b> how to display</b> HTML elements
+                <li class="list-group-item bg-muted">
+                  Styles were added to HTML 4.0 <b>to help separate HTML content from display layout</b>
                 </li>
-                <li class="list-group-item">
-                  Styles are normally stored in <b>Style Sheets</b>
+                <li class="list-group-item bg-secondary">
+                  <b>External Style Sheets</b> can save you a lot of work and are stored in css files.
                 </li>
-                <li class="list-group-item">
-                  Styles were added to HTML 4.0 <b>to solve a problem</b>
-                </li>
-                <li class="list-group-item">
-                  <b>External Style Sheets</b> can save you a lot of work
-                </li>
-                <li class="list-group-item">
-                  External Style Sheets are stored in <b>CSS files</b>
-                </li>
-                <li class="list-group-item">
+                <li class="list-group-item bg-muted">
                   Multiple style definitions will <b>cascade</b> into one
                 </li>
+                <li class="list-group-item bg-secondary">
+                  Allows developers to control the style and layout of multiple Web pages all at once
+                </li>
+                
               </ul>
-              <h3>Styles Solve a Common Problem</h3>
+              <h3 class="text-success">Styles Solve a Common Problem</h3>
+              <div class="row">
+                <div class="col-sm">
+                  <div class="card border-success mb-3" style="max-width: 20rem;">
+                    <div class="card-body">
+                      <p class="card-text">HTML tags designed to define content of document. Layout was
+                        supposed to be taken care of by the browser, without using any
+                        formatting tags.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="card border-success mb-3" style="max-width: 20rem;">
+                    <div class="card-body">
+                      <p class="card-text">As browsers added new tags and attributes to the original
+                        HTML spec, it became more and more difficult to separate content
+                        of HTML docs with the presentation layout.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm">
+                  <div class="card border-success mb-3" style="max-width: 20rem;">
+                    <div class="card-body">
+                      <p class="card-text">W3C stepped in as the responsible party for standardizing HTML
+                        and styles. Enter Cascading Style Sheets.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+              <h4 class="text-success">Cascading Order</h4>
               <p>
-                HTML tags designed to define content of document. Layout was
-                supposed to be taken care of by the browser, without using any
-                formatting tags.
+                More than one style can be specified per HTML element. Below is the Order
+                of "cascading" presidence. The higher the number, the higher the priority.
               </p>
-              <p>
-                As Netscape and IE added new tags and attributes to the original
-                HTML spec, it became more and more difficult to separate content
-                of HTML docs with the presentation layout.
-              </p>
-              <p>
-                W3C stepped in as the responsible party for standardizing HTML
-                and styles. Enter Cascading Style Sheets.
-              </p>
-              <h3>Style Sheets Effice</h3>
-              <p></p>
-              Styles sheets define HOW HTML elements are to be displayed, just
-              like the font tag and the color attribute in HTML 3.2. Styles are
-              normally saved in external .css files. External style sheets
-              enable you to change the appearance and layout of all the pages in
-              your Web, just by editing one single CSS document! CSS is a
-              breakthrough in Web design because it allows developers to control
-              the style and layout of multiple Web pages all at once. As a Web
-              developer you can define a style for each HTML element and apply
-              it to as many Web pages as you want. To make a global change,
-              simply change the style, and all elements in the Web are updated
-              automatically.
+              <ol>
+                <li>Browser default</li>
+                <li> External style sheet</li>
+                <li>Internal style sheet</li>
+                <li>Inline style (inside an HTML element)</li>
+              </ol>
+              <h3 class="text-success">Syntax</h3>
+                <a href="http://w3schools.sinsixx.com/css/css_syntax.asp.htm">
+                  W3C CSS Syntax
+                </a>
+              </div>
+
             </section>
           </div>
         </div>
@@ -126,7 +141,7 @@
   </body>
 </html>
 <style>
-  h4 {
+  h3 {
     margin-top: 15px !important;
   }
 </style>
