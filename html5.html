@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Bryan's HTML/CSS Talk</title>
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, initial-scale = 1.0, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+
+    <script
+      src="https://kit.fontawesome.com/32970a5cd3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#"
+          ><i class="fas fa-code"></i> Bryan's HTML/CSS Talk</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarColor01"
+          aria-controls="navbarColor01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link"
+                >History <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="html5.html">HTML 5</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CSS</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <section id="philosophy">
+              <h3 class="text-success">HTML 5 Philosophy/Principles</h3>
+
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Evolution not revolution. Support existing content.
+                      </h5>
+                      <iframe
+                        src="https://giphy.com/embed/WLT81i307Ddwk"
+                        frameborder="0"
+                        class="giphy-embed"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title">Solve real problems. Do not reinvent the wheel. Pave the cowpaths.<br></h5>
+                      <iframe
+                        src="https://giphy.com/embed/FVAvmLbptzZpC"
+                        frameborder="0"
+                        class="giphy-embed"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        User is most important person to consider
+                      </h5>
+                      <iframe
+                        src="https://giphy.com/embed/l0MYAY18Pxyxwu2xa"
+                        frameborder="0"
+                        class="giphy-embed"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Does not define appearance, only logical structure
+                      </h5>
+                      <iframe
+                        src="https://giphy.com/embed/de4QmZqpcqQMOPL2Mt"
+                        frameborder="0"
+                        class="giphy-embed"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title">Secure by design. Address security directly in specification</h5>
+                      <iframe
+                        src="https://giphy.com/embed/3osxYk6zeuDPLG1G9O"
+                        frameborder="0"
+                        class="giphy-embed"
+                        allowfullscreen
+                        width="100%"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Purpose is to enable structure to be understood by any
+                        computer
+                      </h5>
+                      <iframe
+                        src="https://giphy.com/embed/JIX9t2j0ZTN9S"
+                        frameborder="0"
+                        class="giphy-embed"
+                        allowfullscreen
+                        width="100%"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="dom">
+              <h3 class="text-success">
+                The DOM
+              </h3>
+              <p>
+                The Document Object Model (DOM) is the data representation of
+                the objects that comprise the structure and content of a
+                document on the web.
+              </p>
+              <p>
+                The Document Object Model (DOM) is a programming interface for
+                HTML and XML documents. It represents the page so that programs
+                can change the document structure, style, and content. The DOM
+                represents the document as nodes and objects. That way,
+                programming languages can connect to the page.
+                <br />
+                <em>
+                  document.getElementById('dom').style.color = 'red';
+                </em>
+              </p>
+            </section>
+
+              <section id="semantic-tags">
+                <h3 class="text-success">Semantic Tags</h3>
+                <p>
+                  Early versions of HTML had no globally accepted structural
+                  elements. HTML 5 semantics is all about using the appropriate
+                  elements or tags to help your site be more transportable and
+                  device agnostic. These tags are also very important for
+                  communicating the meaning of various sections of your website
+                  to screen readers and search engines.
+                </p>
+
+                <h4>Main Semantic Tags</h4>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Header - top of document</li>
+                  <li class="list-group-item">Nav - collection of nav items</li>
+                  <li class="list-group-item">
+                    Section - seperate section of page
+                  </li>
+                  <li class="list-group-item">
+                    Article - Main content of the page
+                  </li>
+                  <li class="list-group-item">
+                    Aside - Support or secondary content of the page
+                  </li>
+                  <li class="list-group-item">Footer - Footnote</li>
+                </ul>
+                
+                <h4>Some Benefits</h4>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    Important for accessiblity, especially with simplifying page
+                    navigation
+                  </li>
+                  <li class="list-group-item">
+                    Help you deal w/ foreign alphabets
+                  </li>
+                  <li class="list-group-item">
+                    Make it easier to create consistent styling
+                  </li>
+                </ul>
+              </section>
+              <section id="common-tags">
+                <h3 class="text-success">Common HTML Tags</h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <h4>Headers &lt;h1-h6&gt</h4>
+                    <h1>Pikachu, I choose you</h1>
+                  </li>
+                  <li class="list-group-item">
+                    <h4>Paragraph &lt;p&gt;</h4>
+                    <p>
+                      Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.
+                    </p>
+                    <p>
+                      Trysail Sail ho Corsair red ensign hulk smartly boom jib rum gangway. Case shot Shiver me timbers gangplank crack Jennys tea cup ballast Blimey lee snow crow's nest rutters. Fluke jib scourge of the seven seas boatswain schooner gaff booty Jack Tar transom spirits.
+                    </p>
+                  </li>
+                  <li class="list-group-item">
+                    <h4>Anchor &lta href=""&gt;</h4>
+                    <a href="http://officeipsum.com/index.php" target="_blank">Office Lorem Ipsum</a>
+                  </li>
+                  <li class="list-group-item">
+                    <h4>Lists &lt;ol|ul|dl&gt;</h4>
+                    Favoriate Snacks
+                    <ol>
+                      <li>Almonds</li>
+                      <li>Dang Bars</li>
+                      <li>Chipolte Chips</li>
+                    </ol>
+                  </li>
+                  <li class="list-group-item">
+                    <h4>Horizontal Rule &lt;hr/&gt;</h4>
+                    <hr>
+                  </li>
+                  <li class="list-group-item">
+                    <h4>Image &lt;img src=""&gt;</h4>
+                    <img src="https://media.wired.com/photos/5932896c44db296121d6bd7a/master/w_652,c_limit/Screen-shot-2013-02-11-at-8.38.25-PM.png">
+                  </li>
+                  <li class="list-group-item">
+                    <h4>Div &ltdiv&gt;</h4>
+                    <div style="float: left; color: orange">HEY LEFTY</div>
+                    <div style="float: right; color: red">HEY RIGHTY</div>
+                  </li>
+                  <li class="list-group-item">
+                    <h4>Table &lt;table&gt</h4>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Bryan</td>
+                          <td>Washam</td>
+                          <td>@beeleezyweezums</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jake</td>
+                          <td>The Snake</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </li>
+                  <li class="list-group-item">
+                    <h4>Forms &lt;form&gt;</h4>
+                    <p>
+                      <form>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Email address</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1">Example select</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect2">Example multiple select</label>
+                          <select multiple class="form-control" id="exampleFormControlSelect2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Example textarea</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                      </form>
+                    </p>
+                  </li>
+                </ul>
+              </section>
+              
+              <h3>HTML Display Types</h3>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">More info</a>
+              <h4>Block-level Elements</h4>
+              <p>
+                A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+              </p>
+
+              <h4>Inline Elements</h4>
+              <p>
+                An inline element does not start on a new line and only takes up as much width as necessary.
+              </p>
+              <h4>Inline Block Elements</h4>
+              <p>
+                Sit inline but can have characteristics of block
+              </p>
+
+              <h3>Miscellaneous Links</h3>
+              <p>
+                <a href="https://www.htmlgoodies.com/tutorials/html5/new-tags-in-html5.html" target="_blank">New tags in HTML 5</a>
+              </p>
+
+              <p>
+                <a href="https://www.themelocation.com/best-html5-practices/" target="_blank">HTML5 Best Practices</a>
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+<style>
+  section {
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 15px;
+  }
+  h4 {
+    margin-top: 15px !important;
+  }
+  .card-body {
+    padding-bottom: 25px;
+  }
+</style>
