@@ -9,7 +9,7 @@
       content="width=device-width, initial-scale=1, initial-scale = 1.0, shrink-to-fit=no"
     />
 
-    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
 
     <script
       src="https://kit.fontawesome.com/32970a5cd3.js"
@@ -117,6 +117,7 @@
               </div>
                 
               <h4 class="text-success">Cascading Order</h4>
+              
               <p>
                 More than one style can be specified per HTML element. Below is the Order
                 of "cascading" presidence. The higher the number, the higher the priority.
@@ -127,6 +128,7 @@
                 <li>Internal style sheet</li>
                 <li>Inline style (inside an HTML element)</li>
               </ol>
+
               <h3 class="text-success">Syntax</h3>
               <ul>
                 <li>
@@ -151,6 +153,9 @@
   </body>
 </html>
 <style>
+  #cascading-order > ol {
+    height: 200px !important;
+  }
   h3 {
     margin-top: 15px !important;
   }
