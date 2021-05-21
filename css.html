@@ -122,13 +122,15 @@
                 More than one style can be specified per HTML element. Below is the Order
                 of "cascading" presidence. The higher the number, the higher the priority.
               </p>
+              <!-- <div id="cascading-order"> -->
               <ol>
                 <li>Browser default</li>
                 <li> External style sheet</li>
                 <li>Internal style sheet</li>
                 <li>Inline style (inside an HTML element)</li>
               </ol>
-
+            <!-- </div> -->
+            </div>
               <h3 class="text-success">Syntax</h3>
               <ul>
                 <li>
@@ -144,7 +146,11 @@
               </ul>
                 
               </div>
-
+              <!-- class="make-awesome" -->
+              <h4 class="text-success">Make below awesome</h4>
+              <div style="background: black;"class="not-yet-awesome">
+                Wait for it
+              </div>
             </section>
           </div>
         </div>
@@ -155,8 +161,22 @@
 <style>
   #cascading-order > ol {
     height: 200px !important;
+    background: green;
   }
   h3 {
     margin-top: 15px !important;
+  }
+  .not-yet-awesome {
+    background: gray;
+  }
+  .make-awesome {
+    width: 1000px;
+    height: 500px;
+    font-size: 50px;
+    background: url('https://worldwideinterweb.com/wp-content/uploads/2016/02/80s-hairstyles-for-kids.jpg');
+  }
+
+  .make-awesome:after {
+    content: 'THIS JUST WENT NEXT LEVEL';
   }
 </style>

@@ -180,11 +180,35 @@
                 can change the document structure, style, and content. The DOM
                 represents the document as nodes and objects. That way,
                 programming languages can connect to the page.
-                <br />
-                <em>
-                  document.getElementById('dom').style.color = 'red';
-                </em>
               </p>
+              <h4>Important Stuff</h4>
+              <ul>
+                <li>
+                  Allows devs to manipulate webpages using javascript
+                </li>
+                <li>
+                  Browser takes html doc and parses into DOM
+                </li>
+                <li>
+                  Access DOM with global variable "document"
+                </li>
+                <li>
+                  Use document accessors to read/edit/remove stuff<br>
+                  <em style="color: orange">
+                    -> document.getElementById('dom').style.color = 'red';
+                  </em><br>
+                  <em style="color: orange">
+                    -> document.getElementByTagName('li');
+                  </em>
+                </li>
+                <li>Browser watches for DOM changes and reflects it back</li>
+              </ul>
+              <pre>
+                var test = document.createElement('h1');
+                test.textContent="Jalapeno Donuts";
+                test.style.background="pink";
+                document.body.appendChild(test);
+              </pre>
             </section>
 
               <section id="semantic-tags">
@@ -197,7 +221,7 @@
                   communicating the meaning of various sections of your website
                   to screen readers and search engines.
                 </p>
-
+                <img src="https://www.bitdegree.org/learn/storage/media/images/de63e0dd-5287-4871-aac2-4aeb7678759e.jpg" alt="semantic tag graphic" />
                 <h4>Main Semantic Tags</h4>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">Header - top of document</li>
